@@ -1,5 +1,12 @@
 # ML_honey_tip
 
+## 결측치 처리
+- dict 형태로 변수 마다 결측치 지정 가능
+``` python3
+alter_values = {"age":0, "gender":"man"}
+df = df.fillna(value = alter_values)
+```
+
 ## 교차검증
 - 이진분류학습에서 레이블의 분포가 크게 치우친 경우, k-폴드 교차검증을 사용하는 것은 위험. 타겟 변수에 다른 변수가 들어갈 수 있기 때문. How to solve? 계층별 k-폴드 교차검증 사용
 
