@@ -35,3 +35,9 @@ data.loc[:, "bins"] = pd.cut(
 ``` python3
 plt.xticks(rotation=45)
 ```
+
+## df 균등 분할
+- numpy.array_split(ary, indices_or_sections, axis=0) : ary(df)를 indices로 정한 갯수로 나누는 함수
+``` python3
+np.array_split(europe_pre_1, 10)
+```
